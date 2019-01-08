@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Code Review - Newsletter signup!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>The Code Review</h1>
+        </header>
+
+        <main>
+            <div class="body-top">
+                <h2>Signup for our newsletter</h2>
+                <p class="signup-text">Get the latest news on how your code is doing right now in your inbox.</p>
+            </div>
+
+            <form action="index.html" method="post">
+
+            <div class="box">
+                    <fieldset class="contact-info">
+                        <legend>Contact Information</legend>
+                        
+                        <div class="form-box">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="user_name" id="name" placeholder="Required" required>
+                        </div>
+
+                        <div class="form-box">
+                            <label for="email">E-mail Adress</label>
+                            <input type="email" name="user_email" id="email" placeholder="Required" required>
+                        </div>
+
+                        <div class="form-box">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="user_number" id="number" placeholder="+00 123 45 678">
+                        </div>
+
+                        <div class="form-box">
+                            <label for="adress">Street Adress</label>
+                            <input type="text" name="user_adress" id="adress" placeholder="Example: Longhammarvegen 28">
+                        </div>
+
+                        <div class="form-box">
+                            <label for="city">City</label>
+                            <input type="text" name="user_city" id="city" placeholder="Example: Haugesund">
+                        </div>
+
+                        <div class="form-box">
+                            <label for="region">Region</label>
+                            <select id="region" name="user_region">
+                                <option value="">-- Choose region here --</option>
+                                <option value="akershus">Akershus</option>
+                                <option value="aust-Agder">Aust-Agder</option>
+                                <option value="buskerud">Buskerud</option>
+                                <option value="finnmark">Finnmark</option>
+                                <option value="hedmark">Hedmark</option>
+                                <option value="hordaland">Hordaland</option>
+                                <option value="kingdom of Kopervik">Kingdom of Kopervik</option>
+                                <option value="møre og Romsdal">Møre og Romsdal</option>
+                                <option value="nordland">Nordland</option>
+                                <option value="oppland">Oppland</option>
+                                <option value="oslo">Oslo</option>
+                                <option value="rogaland">Rogaland</option>
+                                <option value="sogn og Fjordane">Sogn of Fjordane</option>
+                                <option value="telemark">Telemark</option>
+                                <option value="troms">Troms</option>
+                                <option value="trøndelag">Trøndelag</option>
+                                <option value="vest-Agder">Vest-Agder</option>
+                                <option value="vestfold">Vestfold</option>
+                                <option value="østfold">Østfold</option>
+                            </select>
+                        </div>
+
+                        <div class="form-box">
+                            <label for="zipcode">Zip Code</label>
+                            <input type="text" name="user_zipcode" id="zipcode" placeholder="1234">
+                        </div>
+                    
+                    </fieldset>
+                </div>
+
+                <div class="box">
+                    <fieldset class="newsletter">
+                        <legend>Newsletter</legend>
+
+                        <div class="newsletter-box">
+                            <label for="html-box" class="checkbox-newsletter">Select the newsletters you would like to recieve</label><br>
+                            <input type="checkbox" name="news-box" id="html-box"><label for="html-box">HTML News</label><br>
+                            <input type="checkbox" name="news-box" id="css-box"><label for="css-box">CSS News</label><br>
+                            <input type="checkbox" name="news-box" id="javascript-box"><label for="javascript-box">Javascript News</label><br>
+                        </div>
+
+                        <div class="newsletter-box">
+                            <label for="html-radio" class="radio-newsletter">Newsletter format</label><br>
+                            <input type="radio" name="news-radio" id="html-radio"><label for="html-box">HTML</label><br>
+                            <input type="radio" name="news-radio" id="text-radio"><label for="css-box">Plain text</label><br>
+                        </div>
+
+                        <div class="newsletter-box">
+                            <label for="topic-box" class="topics-newsletter">Other topics you'd like to hear about</label><br>
+                            <textarea name="textbox-topic" id="topic-box" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <button type="submit" class="signup-button">Sign Up!</button>
+
+                    </fieldset>
+                </div>
+                
+            </form>
+
+        </main>
+
+        <footer>
+            <p>&copy; The Code Review, 2018</p>
+        </footer>
+
+    </body>
+</html>
