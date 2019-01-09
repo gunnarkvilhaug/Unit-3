@@ -42,7 +42,7 @@ form {
 }
 
 .box {
-    margin-top: 5px;
+    margin-top: 30px;
     padding-top: 15px;
     border-top: white solid 1px;
 }
@@ -176,6 +176,7 @@ button:hover {
 
 button:focus {
     background-color: white;
+    color: #91FFB5;
     outline: none;
 }
 
@@ -188,12 +189,15 @@ footer p {
 margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { /********************************************************** DESKTOP **********************************************************/
 
     main {
         max-width: 770px;
         margin: auto;
     }
+
+    .box {
+        margin-top: 40px;
 
     h1 {
         font-size: 80px;
