@@ -1,4 +1,3 @@
-
 html {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #FF7569;
@@ -20,6 +19,10 @@ h1 {
     color: white;
     text-align: center;
     text-transform: uppercase;
+}
+
+.h-code {
+    color: #41494C;
 }
 
 main {
@@ -67,12 +70,15 @@ legend {
     color: white;
     font-size: 26px;
     text-align: center;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
 }
 
 label {
     padding-bottom: 5px;
     color: white;
+    font-size: 1.2em;
 }
 
 .form-box {
@@ -96,11 +102,20 @@ select {
     height: 50px;
     padding: 10px;
     text-align: end;
-    font-size: 14px;
+    font-size: 1.2em;
     border: none;
     background-color: white;
     border-radius: 10px;
+    transition: all .5s ease-in-out;
 }
+
+input:focus,
+textarea:focus,
+select:focus { 
+    background-color: #FFC6C3;
+    outline: none;
+}
+
 
 select {
     width: 100%;
@@ -108,8 +123,8 @@ select {
 }
 
 #zipcode {
-    text-align: left;
-    width: 35%;
+    text-align: center;
+    width: 50%;
 }
 .nlbox {
     padding-top: 10px;
@@ -122,8 +137,13 @@ select {
     cursor: pointer;
 }
 
-.nlbox input:checked {
-    background-color: #91FFB5;
+.nltext {
+    text-align: center;
+    font-size: 16px;
+}
+
+.nlbox label {
+    font-size: 1.3em;
 }
 
 textarea {
@@ -132,8 +152,9 @@ textarea {
     box-sizing: border-box;
     font-size: 14px;
     border: none;
-    background-color: #f5f5f5;
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
 }
 
 button {
@@ -144,9 +165,18 @@ button {
     height: 70px;
     margin: 20px auto 0 auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     border: none;
     border-radius: 5px;
+}
+
+button:hover {
+    background-color: #78D496;
+}
+
+button:focus {
+    background-color: white;
+    outline: none;
 }
 
 footer {
@@ -156,4 +186,56 @@ footer {
 }
 footer p {
 margin: 0;
+}
+
+@media (min-width: 768px) {
+
+    main {
+        max-width: 770px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .form-box {
+        display: flex;
+    }
+
+    legend {
+        margin: auto;
+        font-size: 2em;
+    }
+
+    .form-box input,
+    .form-box select {
+        width: 75%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 1.3em;
+    }
+
+    .form-box label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: white;
+        color: #41494C;
+        border-right: #FF7569 solid 4px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-size: 1.2em;
+    }
+
+    #zipcode {
+        width: 30%;
+    }
+
+    button {
+        height: 100px;
+        font-size: 40px;
+        border-radius: 10px;
+}
 }
