@@ -147,10 +147,11 @@ select {
 }
 
 textarea {
+    padding: 20px;
     width: 100%;
     resize: none;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 20px;
     border: none;
     background-color: white;
     border-radius: 10px;
