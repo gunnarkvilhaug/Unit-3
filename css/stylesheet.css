@@ -42,7 +42,7 @@ form {
 }
 
 .box {
-    margin-top: 30px;
+    margin-top: 10px;
     padding-top: 15px;
     border-top: white solid 1px;
 }
@@ -189,7 +189,7 @@ footer p {
 margin: 0;
 }
 
-@media (min-width: 768px) { /********************************************************** DESKTOP **********************************************************/
+@media (min-width: 768px) {
 
     main {
         max-width: 770px;
@@ -198,6 +198,7 @@ margin: 0;
 
     .box {
         margin-top: 40px;
+    }
 
     h1 {
         font-size: 80px;
