@@ -20,10 +20,9 @@ h1 {
 }
 
 main {
-    border-radius: 5px;
+    border-radius: 25px;
     margin: auto;
-    width: 100%;
-    max-width: 600px; 
+    width: 95%;
     padding: 10px;
     background-color: #FAFFFF;
 }
@@ -39,11 +38,6 @@ main {
     border-top: #3F5866 dotted 2px;
 }
 
-fieldset {
-    padding: 0;
-    border: none;
-}
-
 h2 {
     text-align: center;
     color: #3F5866;
@@ -56,18 +50,70 @@ h2 {
     font-size: 1.2em;
 }
 
-.form-box {
-    display: flex;
-}
-
-.form-box label input {
-    display: block;
-    width: 100%;
+fieldset {
+    padding: 0;
+    border: none;
+    margin: 0;
 }
 
 legend {
     color: #3F5866;
     font-size: 20px;
+}
+
+label {
+    padding-bottom: 5px;
+}
+
+.form-box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-box label {
+    display: block;
+}
+
+.form-box input,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 10px;
+    text-align: end;
+    font-size: 14px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    height: 50px;
+}
+
+#zipcode {
+    text-align: left;
+    width: 35%;
+}
+.nlbox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.nlbox input {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
 }
 
 footer {
