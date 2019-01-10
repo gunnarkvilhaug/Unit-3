@@ -91,7 +91,7 @@ label {
 }
 
 input::placeholder {
-    color: #ABA9AB;
+    color: lightgrey;
     font-style: italic;
 }
 
@@ -116,6 +116,9 @@ select:focus {
     outline: none;
 }
 
+input:hover::placeholder {
+    color: #41494C;
+}
 
 select {
     width: 100%;
