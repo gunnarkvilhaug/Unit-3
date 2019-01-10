@@ -91,7 +91,7 @@ label {
 }
 
 input::placeholder {
-    color: #41494C 1%;
+    color: #ABA9AB;
     font-style: italic;
 }
 
@@ -229,7 +229,7 @@ margin: 0;
         width: 25%;
         background-color: white;
         color: #41494C;
-        border-right: #FF7569 solid 4px;
+        border-right: #FF7569 solid 2px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         font-size: 1.2em;
