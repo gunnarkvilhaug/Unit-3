@@ -37,6 +37,7 @@ form {
 
 .body-top {
     padding: 15px;
+    margin-bottom: 30px;
     background: white;
     border-radius: 10px;
 }
@@ -176,6 +177,7 @@ button {
 
 button:hover {
     background-color: #78D496;
+    color: white;
 }
 
 button:focus {
